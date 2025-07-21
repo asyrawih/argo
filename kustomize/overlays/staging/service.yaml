@@ -5,8 +5,11 @@ metadata:
   labels:
     environment: staging 
 spec:
+  $patch: replace
   ports:
   - port: 8080 
     targetPort: 8080 # Adjust this to match your app's container port
     protocol: TCP
     name: http
+  selector:
+    app: app-deployment
