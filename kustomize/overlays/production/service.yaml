@@ -8,8 +8,8 @@ spec:
   type: LoadBalancer  # Using LoadBalancer for production
   $patch: replace
   ports:
-  - port: 80
-    targetPort: 8080
+  - port: 7171
+    targetPort: 7171
     protocol: TCP
     name: http
   selector:
