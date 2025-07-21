@@ -12,7 +12,7 @@ spec:
     targetRevision: HEAD
     path: kustomize/overlays/production
   destination:
-    server: https://localhost:6443
+    server: https://kubernetes.default.svc
     namespace: production
   syncPolicy:
     automated:
