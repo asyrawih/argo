@@ -2,9 +2,8 @@ resources:
 - deployment.yaml
 - service.yaml
 
-namePrefix: base-
-
+# Removed namePrefix as it's typically not needed in the base
 labels:
   - pairs:
-      app: my-app
+      app: app-deployment
       managed-by: kustomize

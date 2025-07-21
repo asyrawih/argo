@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: app-service
   labels:
-    app: my-app
+    app: app-deployment
     managed-by: kustomize
 spec:
   type: ClusterIP
@@ -13,4 +13,4 @@ spec:
     protocol: TCP
     name: http
   selector:
-    app: my-app
+    app: app-deployment
