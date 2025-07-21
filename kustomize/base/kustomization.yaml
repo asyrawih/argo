@@ -1,6 +1,7 @@
 resources:
 - deployment.yaml
 - service.yaml
+- configMap.yaml
 
 # Removed namePrefix as it's typically not needed in the base
 labels:
