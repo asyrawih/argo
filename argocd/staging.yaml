@@ -4,7 +4,7 @@ metadata:
   name: app-staging
   namespace: argocd
   finalizers:
-    - resources-finalizer.argocd.argoproj.io
+    - resources-finalizer.argoproj.io/background
 spec:
   project: default
   source:
