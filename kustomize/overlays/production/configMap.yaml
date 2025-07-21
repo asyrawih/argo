@@ -8,3 +8,4 @@ metadata:
 data:
   ENVIRONMENT: production
   SAMPLE: "This is a sample value in the production environment"
+  PRODUCTION_CONFIG: "test-config-production"
