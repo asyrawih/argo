@@ -18,6 +18,8 @@ spec:
         env:
         - name: ENVIRONMENT
           value: "production"
+        command: ["/bin/sh"]
+        args: ["-c", "sed -i 's/listen       80;/listen       7171;/' /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"]
         ports:
         - containerPort: 7171
         resources:
