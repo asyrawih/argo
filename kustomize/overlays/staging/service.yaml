@@ -6,7 +6,7 @@ metadata:
     environment: staging 
 spec:
   ports:
-  - port: 8181
-    targetPort: 8181  # Adjust this to match your app's container port
+  - port: 8080 
+    targetPort: 8080 # Adjust this to match your app's container port
     protocol: TCP
     name: http
