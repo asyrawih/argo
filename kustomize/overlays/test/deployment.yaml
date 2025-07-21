@@ -4,7 +4,13 @@ metadata:
   name: app-deployment
 spec:
   replicas: 3
+  selector:
+    matchLabels:
+      app: app-deployment
   template:
+    metadata:
+      labels:
+        app: app-deployment
     spec:
       containers:
       - name: app
