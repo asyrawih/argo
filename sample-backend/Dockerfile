@@ -1,16 +1,10 @@
 # Build stage
-FROM golang:1.21-alpine AS builder
+FROM golang:1.22-alpine AS builder
 
 # Set working directory
 WORKDIR /app
 
-# Copy go mod file
-COPY go.mod ./
-
-# Download dependencies (if any)
-RUN go mod download
-
-# Copy source code
+# Copy all source files
 COPY . .
 
 # Build the application
