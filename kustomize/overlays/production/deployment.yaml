@@ -14,13 +14,16 @@ spec:
     spec:
       containers:
       - name: app
+        image: nginx:stable  # Using stable tag for production
         env:
         - name: ENVIRONMENT
           value: "production"
+        ports:
+        - containerPort: 7171
         resources:
           requests:
-            memory: "512Mi"
-            cpu: "1000m"
+            memory: "128Mi"
+            cpu: "500m"
           limits:
-            memory: "1Gi"
-            cpu: "2000m"
+            memory: "256Mi"
+            cpu: "1000m"
