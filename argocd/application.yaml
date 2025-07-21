@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/yourusername/windsurf-project.git
+    repoURL: https://github.com/asyrawih/argo.git
     targetRevision: HEAD
     path: kustomize/overlays/production
   destination:
