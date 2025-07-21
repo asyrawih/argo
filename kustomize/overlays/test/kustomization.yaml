@@ -1,0 +1,11 @@
+resources:
+- ../../base
+
+namePrefix: test-
+
+labels:
+  - pairs:
+      environment: test
+
+patches:
+  - path: deployment.yaml

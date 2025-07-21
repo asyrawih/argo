@@ -1,0 +1,11 @@
+resources:
+- ../../base
+
+namePrefix: prod-
+
+labels:
+  - pairs:
+      environment: production
+
+patches:
+  - path: deployment.yaml

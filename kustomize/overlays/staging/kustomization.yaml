@@ -1,0 +1,11 @@
+resources:
+- ../../base
+
+namePrefix: staging-
+
+labels:
+  - pairs:
+      environment: staging
+
+patches:
+  - path: deployment.yaml

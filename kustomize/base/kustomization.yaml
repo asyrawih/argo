@@ -1,0 +1,9 @@
+resources:
+- deployment.yaml
+
+namePrefix: base-
+
+labels:
+  - pairs:
+      app: my-app
+      managed-by: kustomize
