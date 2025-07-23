@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: app
-        image: ghcr.io/asyrawih/argo/sample-backend:latest
+        image: ghcr.io/asyrawih/argo/sample-backend:v0.0.6
         ports:
         - containerPort: 8080
         resources:
