@@ -5,7 +5,7 @@ metadata:
   namespace: argocd
   annotations:
     argocd-image-updater.argoproj.io/image-list: ghcr.io/asyrawih/argo/sample-backend
-    argocd-image-updater.argoproj.io/ghcr.io-asyrawih-argo-sample-backend.update-strategy: regexp:^v[0-9]+(\.[0-9]+)*(-[a-z0-9]+)?$
+    argocd-image-updater.argoproj.io/ghcr.io-asyrawih-argo-sample-backend.update-strategy: regexp:^[0-9]+(\.[0-9]+)*(-[a-z0-9]+)?$
     argocd-image-updater.argoproj.io/write-back-method: git
     argocd-image-updater.argoproj.io/git-branch: main
   finalizers:
